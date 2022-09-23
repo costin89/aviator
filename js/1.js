@@ -12,6 +12,17 @@ renderer.shadowMap.type = THREE.PCFSoftShadowMap;
 
 const controls = new THREE.OrbitControls(camera, renderer.domElement);
 controls.enableZoom = true;
+controls..enablePan = false;
+controls.enableRotate = false;
+controls.enableDamping = false;
+controls.keys = {
+	LEFT: 'ArrowLeft', //left arrow
+	UP: 'ArrowUp', // up arrow
+	RIGHT: 'ArrowRight', // right arrow
+	BOTTOM: 'ArrowDown' // down arrow
+}
+
+
 
 document.body.appendChild( renderer.domElement );
 
