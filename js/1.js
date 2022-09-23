@@ -11,7 +11,7 @@ renderer.shadowMap.enabled = true;
 renderer.shadowMap.type = THREE.PCFSoftShadowMap; 
 
 const controls = new THREE.OrbitControls(camera, renderer.domElement);
-controls.enableZoom = false;
+controls.enableZoom = true;
 
 document.body.appendChild( renderer.domElement );
 
