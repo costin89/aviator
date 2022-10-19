@@ -38,7 +38,7 @@ const textureLoader = new THREE.TextureLoader();
 textureEquirec = textureLoader.load( 'hdri/1.png' );
 textureEquirec.mapping = THREE.EquirectangularReflectionMapping;
 textureEquirec.encoding = THREE.sRGBEncoding;
-scene.background = textureCube;
+scene.background = textureEquirec;
 
 const gltfLoader = new THREE.GLTFLoader();
 const url = '3d/wallet.glb';
