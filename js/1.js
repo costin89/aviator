@@ -5,7 +5,7 @@ const camera = new THREE.PerspectiveCamera( 40, window.innerWidth / window.inner
 
 const renderer = new THREE.WebGLRenderer({antialias: true, alpha: true,});
 renderer.setSize( window.innerWidth, window.innerHeight );
-renderer.gammaFactor = 2.2;
+//renderer.gammaFactor = 2.2;
 renderer.outputEncoding = THREE.sRGBEncoding;
 renderer.shadowMap.enabled = true;
 renderer.shadowMap.type = THREE.PCFSoftShadowMap; 
