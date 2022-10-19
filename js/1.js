@@ -35,10 +35,10 @@ mtlLoader.load("3d/WALLET.mtl", function(materials){
 });*/
 
 const gltfLoader = new THREE.GLTFLoader();
-const url = "3d/wallet.glb";
+const url = '3d/wallet.glb';
 gltfLoader.load(url, (gltf) => {
 	const wallet = gltf.scene;
-    	scene.add(wallet);
+	scene.add(wallet);
 });
 
 const lights = new THREE.HemisphereLight(0x2cf8ca, 0x080820, 1);
