@@ -33,7 +33,7 @@ mtlLoader.load("3d/WALLET.mtl", function(materials){
 
 const gltfLoader = new THREE.GLTFLoader();
 const url = "3d/wallet.glb";
-gltfLoader.load(url, (gltf) => {
+gltfLoader.load(url, (glb) => {
 	const wallet = gltf.scene;
     	scene.add(wallet);
 });
