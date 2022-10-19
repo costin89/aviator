@@ -40,10 +40,10 @@ textureEquirec.mapping = THREE.EquirectangularReflectionMapping;
 textureEquirec.encoding = THREE.sRGBEncoding;
 scene.background = textureEquirec;*/
 
-const envMap = new THREE.TextureLoader();
+/*const envMap = new THREE.TextureLoader();
 const textEnv = envMap.load(‘hdri/1.png’);
 textEnv.mapping = THREE.SphericalReflectionMapping;
-scene.envMap = textEnv;
+scene.envMap = textEnv;*/
 
 const gltfLoader = new THREE.GLTFLoader();
 const url = '3d/wallet.glb';
