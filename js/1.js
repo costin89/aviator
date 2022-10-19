@@ -21,7 +21,7 @@ document.body.appendChild( renderer.domElement );
 camera.position.z = 200;
 
 	
-const mtlLoader = new THREE.MTLLoader();
+/*const mtlLoader = new THREE.MTLLoader();
 mtlLoader.load("3d/WALLET.mtl", function(materials){
 	materials.preload();
 	const objLoader = new THREE.OBJLoader();
@@ -29,7 +29,13 @@ mtlLoader.load("3d/WALLET.mtl", function(materials){
 	objLoader.load("3d/WALLET.obj", function(object){
 		scene.add(object);
 	});
-});
+});*/
+
+const gltfLoader = new THREE.GLTFLoader();
+const url = '3D/1.gltf';
+gltfLoader.load(url, (gltf) => {
+	const root = gltf.scene;
+    	scene.add(root);
 
 const lights = new THREE.HemisphereLight(0x2cf8ca, 0x080820, 1);
 scene.add(lights);
