@@ -10,8 +10,8 @@ renderer.outputEncoding = THREE.sRGBEncoding;
 renderer.shadowMap.enabled = true;
 renderer.shadowMap.type = THREE.PCFSoftShadowMap; 
 
-renderer.toneMapping = THREE.LinearToneMapping;
-renderer.toneMappingExposure = Math.pow( 0.94, 5.0 );
+//renderer.toneMapping = THREE.LinearToneMapping;
+//renderer.toneMappingExposure = Math.pow( 0.94, 5.0 );
 
 const controls = new THREE.OrbitControls(camera, renderer.domElement);
 controls.enableZoom = true;
