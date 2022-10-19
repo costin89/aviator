@@ -35,7 +35,7 @@ mtlLoader.load("3d/WALLET.mtl", function(materials){
 });*/
 
 const textureLoader = new THREE.TextureLoader();
-textureEquirec = textureLoader.load( 'hdri/1.png' );
+const textureEquirec = textureLoader.load( 'hdri/1.png' );
 textureEquirec.mapping = THREE.EquirectangularReflectionMapping;
 textureEquirec.encoding = THREE.sRGBEncoding;
 scene.background = textureEquirec;
