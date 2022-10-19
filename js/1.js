@@ -36,6 +36,7 @@ const url = "3d/wallet.glb";
 gltfLoader.load(url, (gltf) => {
 	const wallet = gltf.scene;
     	scene.add(wallet);
+});
 
 const lights = new THREE.HemisphereLight(0x2cf8ca, 0x080820, 1);
 scene.add(lights);
