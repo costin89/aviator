@@ -10,6 +10,9 @@ renderer.outputEncoding = THREE.sRGBEncoding;
 renderer.shadowMap.enabled = true;
 renderer.shadowMap.type = THREE.PCFSoftShadowMap; 
 
+renderer.toneMapping = THREE.LinearToneMapping;
+renderer.toneMappingExposure = Math.pow( 0.94, 5.0 );
+
 const controls = new THREE.OrbitControls(camera, renderer.domElement);
 controls.enableZoom = true;
 controls.enablePan = false;
@@ -33,7 +36,7 @@ mtlLoader.load("3d/WALLET.mtl", function(materials){
 
 const gltfLoader = new THREE.GLTFLoader();
 const url = "3d/wallet.glb";
-gltfLoader.load(url, (glb) => {
+gltfLoader.load(url, (gltf) => {
 	const wallet = gltf.scene;
     	scene.add(wallet);
 });
