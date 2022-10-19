@@ -34,6 +34,12 @@ mtlLoader.load("3d/WALLET.mtl", function(materials){
 	});
 });*/
 
+const textureLoader = new THREE.TextureLoader();
+textureEquirec = textureLoader.load( 'hdri/1.jpg' );
+textureEquirec.mapping = THREE.EquirectangularReflectionMapping;
+textureEquirec.encoding = THREE.sRGBEncoding;
+scene.background = textureCube;
+
 const gltfLoader = new THREE.GLTFLoader();
 const url = '3d/wallet.glb';
 gltfLoader.load(url, (gltf) => {
