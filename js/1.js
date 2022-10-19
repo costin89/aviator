@@ -5,7 +5,7 @@ const camera = new THREE.PerspectiveCamera( 40, window.innerWidth / window.inner
 
 const renderer = new THREE.WebGLRenderer({antialias: true, alpha: true,});
 renderer.setSize( window.innerWidth, window.innerHeight );
-//renderer.gammaFactor = 2.2;
+renderer.gammaFactor = 2.2;
 renderer.outputEncoding = THREE.sRGBEncoding;
 renderer.shadowMap.enabled = true;
 renderer.shadowMap.type = THREE.PCFSoftShadowMap; 
@@ -34,11 +34,11 @@ mtlLoader.load("3d/WALLET.mtl", function(materials){
 	});
 });*/
 
-const textureLoader = new THREE.TextureLoader();
+/*const textureLoader = new THREE.TextureLoader();
 const textureEquirec = textureLoader.load( 'hdri/1.png' );
 textureEquirec.mapping = THREE.EquirectangularReflectionMapping;
 textureEquirec.encoding = THREE.sRGBEncoding;
-scene.background = textureEquirec;
+scene.background = textureEquirec;*/
 
 const gltfLoader = new THREE.GLTFLoader();
 const url = '3d/wallet.glb';
